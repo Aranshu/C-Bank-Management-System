@@ -12,6 +12,6 @@
 
 int main()
 {
-    printf("Hello World"); //printing the output'
+    printf("Hello World"); //printing the output
     return 0;
 }
