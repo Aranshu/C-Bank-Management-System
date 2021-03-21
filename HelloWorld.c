@@ -9,9 +9,14 @@
  * 
  */
 #include<stdio.h>
-
+#include "./HeaderFile/Calculator.h"
 int main()
 {
-    printf("Hello World"); //printing the output
-    return 0;
+    printf("Hello World\n"); //printing the output
+    int a[5]={1,2,3,4,5};
+   printf("%d\n",addition(a,5));
+   printf("%d\n",subtraction(a,5));
+   printf("%d\n",multiply(a,5));
+   printf("%d\n",divide(a,5));
+
 }
