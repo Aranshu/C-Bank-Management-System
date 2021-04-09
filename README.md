@@ -1,7 +1,7 @@
 # Bank Management System
 * This is a system in which user can add bank account and manage them. He has a calculator build into the gui
 
-![Banner](6_ImagesAndVideos/banner.png)
+![Banner](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Banner.png)
 
 Visit [Pages for Report -optional](using github.io option)
 
