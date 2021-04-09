@@ -9,14 +9,15 @@
  * 
  */
 #include "Calculator.h"
+
 /**
  * @brief 
  * 
- * @param number1 
- * @param number2 
+ * @param calculator_number1 
+ * @param calculator_number2 
  * @return int 
  */
- int subtraction (struct calculator* calculator_number1,struct calculator* calculator_number2)
+ int subtraction (calculator* calculator_number1,calculator* calculator_number2)
 {
-    return calculator_number1->number-calculator_number1->number;
+    return calculator_number1->number-calculator_number2->number;
 }

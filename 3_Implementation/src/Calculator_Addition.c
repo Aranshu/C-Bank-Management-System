@@ -9,6 +9,7 @@
  * 
  */
 #include "Calculator.h"
+
 /**
  * @brief 
  * 
@@ -16,7 +17,7 @@
  * @param number2 
  * @return int 
  */
-int addition (struct calculator* calculator_number1,struct calculator* calculator_number2)
+int addition (calculator* calculator_number1,calculator* calculator_number2)
 {
     return calculator_number1->number+calculator_number2->number;
 }

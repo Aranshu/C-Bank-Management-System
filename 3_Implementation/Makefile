@@ -1,22 +1,63 @@
+PROJ_NAME = BankManagementSystem
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-#Target : dependency
-#<TAB>Command
+BUILD_DIR = build
 
-PROJECT_NAME = all.exe
-SRC = Main.c\
-src\Login.c\
-src\Addition.c\
-src\Subtraction.c
+INC = -Iinc\
+-Iunity
 
-INC = inc\
-inc\Calculator.h
+SRC = src/Login.c\
+src/Calculator_Addition.c\
+src/Calculator_Subtraction.c\
+src/Calculator_Multiplication.c\
+src/Calculator_Division.c\
+src/Calculator_Power.c\
+src/Calculator_Factorial.c\
+src/Calculator_Modulus.c\
+src/Account_Create.c\
+src/Account_Delete_All.c\
+src/Account_List.c\
+src/Account_Update.c
+TEST_SRC = test/Test_Calculator.c\
+unity/unity.c
 
-$(PROJECT_NAME): $(SRC)
-	gcc -I $(INC) $(SRC) -o all.exe
-	
-run: $(PROJECT_NAME)
-	$(PROJECT_NAME)
-	
+
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
+
+.PHONY : all test coverage run clean doc
+
+all:$(BUILD_DIR)
+	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+run: all
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+test: $(SRC) $(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:${PROJECT_NAME}
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+doc:
+	make -C doc
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
+
 clean:
-	del /q *.exe
-	
+	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	make clean -C doc
+	rmdir $(BUILD_DIR) doc/html
