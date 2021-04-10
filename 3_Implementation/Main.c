@@ -1,21 +1,29 @@
 /**
  * @file Main.c
  * @author your name (you@domain.com)
- * @brief 
+ * @brief Main File to run system
  * @version 0.1
  * @date 2021-04-07
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-#include<stdio.h>
-#include<string.h>
-#include<conio.h>
 
-#include"Login.h"
-#include"Calculator.h"
+/**
+ * @brief User created header file
+ * 
+ */
 #include"Account.h"
+#include"Calculator.h"
+#include"HeaderFile.h"
+#include"Login.h"
 
+
+/**
+ * @brief Main Function of ProgramS
+ * 
+ * @return int 
+ */
 int main()
 {
 login: 
@@ -23,9 +31,9 @@ login:
         char username[15],password[12];   
         printf("\n\tLOGIN PAGE\n\n");
         printf("Exter Your Username:\t");
-        scanf("%4s",&username);
+        scanf("%13s",&username);
         printf("Exter Your Password:\t");
-        scanf("%4s",&password);
+        scanf("%10s",&password);
         if(login(username,password))
         {
         int flag=0;
@@ -33,7 +41,8 @@ main_menu:
         do
         {
                 system("cls||clear"); 
-                char choice_main_menu;
+                flag=0;
+                char choice_main_menu='`';
                 printf("\n\t\t\tCustomer Account Banking Management System\n\n");
                 printf("Press 1 to Create new account\n");
                 printf("Press 2 to Update information of existing account\n");
@@ -42,13 +51,14 @@ main_menu:
                 printf("Press 5 to List of all account\n");
                 printf("Press 6 to delete all account\n");
                 printf("Press 7 to Open calculator\n");
-                printf("Press 8 for login page\n");
+                printf("Press 8 to change login credentials\n");
+                printf("Press 9 for login page\n");
                 printf("\nPlease enter your choice:\t");
                 scanf("%1s",&choice_main_menu);
                 switch(choice_main_menu)
                 {
                         case'1':system("cls||clear"); 
-                                create();
+                                account_create();
                                 getch(); 
                                 break;
                         case'2':system("cls||clear"); 
@@ -59,20 +69,22 @@ main_menu:
                                 getch();
                                 break;
                         case'4':system("cls||clear"); 
+                                account_Record();
+                                getch();
                                 break;
                         case'5':system("cls||clear"); 
-                                list1();
+                                account_list();
                                 getch();
                                 break;
                         case'6':system("cls||clear"); 
-                                delete1();
+                                account_delete_all();
                                 getch();
                                 break;
                         case'7':do
                                 {
                                         system("cls||clear"); 
                                         flag=0;
-                                        char choice_sub_menu;
+                                        char choice_sub_menu='`';
                                         struct calculator calculator_number1;
                                         struct calculator calculator_number2;
                                         printf("\n\t\tWelcome to calculator\n\n");
@@ -133,7 +145,10 @@ main_menu:
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the Power:\t\t");
                                                         scanf("%d",&calculator_number2.number);
-                                                        printf("Result is:\t\t\t%d\n",power(&calculator_number1,&calculator_number2));
+                                                        if(power(&calculator_number1,&calculator_number2)==-1)
+                                                                printf("\nPlease enter a positive number to find factorial and try again\nFactorial can't be found for negative values. It can be only positive or 0 \n");
+                                                        else
+                                                                printf("Result is:\t\t\t%d\n",power(&calculator_number1,&calculator_number2));
                                                         getch();
                                                         break;
                                                 case'!':system("cls||clear"); 
@@ -166,7 +181,11 @@ main_menu:
                                 }
                                 while (flag!=2);
                                 goto main_menu;
-                        case'8': flag=1;
+                        case'8':system("cls||clear");
+                                login_datail_update(); 
+                                getch();
+                                break;
+                        case'9':flag=1;
                                 break;
                         default:system("cls||clear");
                                 printf("Please enter a valid choice\n"); 

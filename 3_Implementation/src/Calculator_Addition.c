@@ -1,7 +1,7 @@
 /**
  * @file Addition.c
  * @author your name (you@domain.com)
- * @brief 
+ * @brief c file for Calculator.h
  * @version 0.1
  * @date 2021-04-08
  * 
@@ -11,10 +11,10 @@
 #include "Calculator.h"
 
 /**
- * @brief 
+ * @brief funtion for addition of number
  * 
- * @param number1 
- * @param number2 
+ * @param number1 calculator_number1 Pointer to calculator
+ * @param number2 calculator_number2 Pointer to calculator
  * @return int 
  */
 int addition (calculator* calculator_number1,calculator* calculator_number2)

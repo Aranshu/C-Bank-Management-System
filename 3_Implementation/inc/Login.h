@@ -8,11 +8,21 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<string.h>
-#include<stdbool.h>  
 
 /**
- * @brief function for login
+ * @brief User created header file
+ * 
+ */
+#include "HeaderFile.h"
+
+/**
+ * @brief function for updating login details
+ * 
+ */
+void login_datail_update();
+
+/**
+ * @brief function for checking login details
  * 
  * @param username variable used to store username
  * @param password variable used to store password

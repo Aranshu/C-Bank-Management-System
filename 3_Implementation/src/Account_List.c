@@ -1,48 +1,52 @@
-#include <conio.h>
-#include <stdio.h>
-#include <string.h>
-  
-// Driver Code
-void list1()
+/**
+ * @file Account_List.c
+ * @author your name (you@domain.com)
+ * @brief c file for Account.h
+ * @version 0.1
+ * @date 2021-04-09
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+#include "Account.h"
+
+/**
+ * @brief function for printing account list
+ * 
+ * @return error 
+ */
+error account_list()
 {
-    // Substitute the full file path
-    // for the string file_path
-    FILE* file_pointer = fopen("file_path.csv", "r");
+    FILE* file_pointer = fopen("../7_Other/data-set/Account_Datail.csv", "r");
   
     if (!file_pointer)
+    {
         printf("Can't open file\n");
-  
-    else {
-
+        return ERROR_File_Not_Present;
+    }
+    else 
+    {
         char buffer[1024];
-  
         int table_row = 0;
         int table_column = 0;
-        printf("\n\t\t\tList of all account\n\n");
-        while (fgets(buffer,1024,file_pointer)) {
+
+        printf("\n\t\tList of all account\n\n");
+        while (fgets(buffer,1024,file_pointer)) 
+        {
             table_column = 0;
             table_row++;
-  
-            // To avoid printing of column
-            // names in file can be changed
-            // according to need
-            if (table_row == 1)
-                continue;
-  
-            // Splitting the data
+
             char* value = strtok(buffer, ", ");
   
-            while (value) {
-                // Column 1
+            while (value) 
+            {
                 if (table_column == 0)
                     printf("Account Holder Name:\t");
   
-                // Column 2
-                if (table_column == 1) 
+                else if (table_column == 1) 
                     printf("Account Number:\t\t");
   
-                // Column 3
-                if (table_column == 2) 
+                else if (table_column == 2) 
                     printf("Available Amount:\t");
   
                 printf("%s\n", value);
@@ -53,4 +57,5 @@ void list1()
         fclose(file_pointer);
         printf("\nAll account printed\t");
     }
+    return  SUCCESS;
 }

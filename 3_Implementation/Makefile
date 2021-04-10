@@ -6,19 +6,21 @@ BUILD_DIR = build
 INC = -Iinc\
 -Iunity
 
-SRC = src/Login.c\
-src/Calculator_Addition.c\
-src/Calculator_Subtraction.c\
-src/Calculator_Multiplication.c\
-src/Calculator_Division.c\
-src/Calculator_Power.c\
-src/Calculator_Factorial.c\
-src/Calculator_Modulus.c\
-src/Account_Create.c\
+SRC = src/Account_Create.c\
 src/Account_Delete_All.c\
 src/Account_List.c\
-src/Account_Update.c
-TEST_SRC = test/Test_Calculator.c\
+src/Account_Record.c\
+src/Account_Update.c\
+src/Calculator_Addition.c\
+src/Calculator_Division.c\
+src/Calculator_Factorial.c\
+src/Calculator_Modulus.c\
+src/Calculator_Multiplication.c\
+src/Calculator_Power.c\
+src/Calculator_Subtraction.c\
+src/Login_Detail_Update.c\
+src/Login.c
+TEST_SRC = test/Test_Account_Calculator.c\
 unity/unity.c
 
 
