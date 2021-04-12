@@ -214,7 +214,7 @@ main_menu:
                                 fflush(stdin);
                                 break;
                         default:system("cls||clear");
-                                printf("Please enter a valid choice\n"); 
+                                printf("\nPlease enter a valid choice\n"); 
                                 getch();
                 }
         } 
