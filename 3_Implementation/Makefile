@@ -18,6 +18,7 @@ src/Calculator_Modulus.c\
 src/Calculator_Multiplication.c\
 src/Calculator_Power.c\
 src/Calculator_Subtraction.c\
+src/File_Check_All.c\
 src/Login_Detail_Update.c\
 src/Login.c
 TEST_SRC = test/Test_Account_Calculator.c\

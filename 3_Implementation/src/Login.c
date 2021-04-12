@@ -23,28 +23,35 @@ bool login(char username[15],char password[12])
     char buffer[1024];
     int table_row = 0;
     int table_column = 0;
-    int flag=0;
+    int flag_username=1;
+    int flag_password=1;
 
     FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.csv", "a+");
     while (fgets(buffer,1024,file_pointer)) 
     {
+        table_column = 0;
         table_row++;
         char* value = strtok(buffer, ", ");
         while (value) 
         {
-            if (!strcmp(username,value))
-                flag++;
-            if(!strcmp(password,value))
-                flag++;
+            if(table_column == 0)
+            {
+               flag_username=strcmp(value,username);
+            }
+            if(table_column == 1)
+            {
+                flag_password=strcmp(value,password);
+
+            }                    
             value = strtok(NULL, ", ");
             table_column++;
         }
     }
     fclose(file_pointer);
-    if(flag==2)
+    if(flag_username==0 || flag_password==0)
     {
         return true;
     }
     else
-    return false;
+        return false;
 }

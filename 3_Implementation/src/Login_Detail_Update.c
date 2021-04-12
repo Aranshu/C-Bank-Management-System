@@ -21,11 +21,10 @@ void login_datail_update()
     printf("Warning login credential will change Permanently\n\nPress enter to change login details\nPress esc to move to safe zone\n\nPlease enter your choice:\t\t");
     if((flag=getch())!=27)
     {
-        fclose(fopen("../7_Other/data-set/Login_Detail.csv", "w"));
-        FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.csv", "a+");
+        FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.csv", "w");
         char username[15],password[12];
     
-        printf("\nPlease Enter your new username:\t");
+        printf("\nPlease Enter your new username:\t\t");
         scanf("%13s", &username);
         printf("Please Enter your new password:\t\t");
         scanf("%10s", &password);

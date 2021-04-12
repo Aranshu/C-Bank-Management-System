@@ -29,6 +29,7 @@ int main()
 login: 
         system("cls||clear");    
         char username[15],password[12];   
+        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
         printf("\n\tLOGIN PAGE\n\n");
         printf("Exter Your Username:\t");
         scanf("%13s",&username);

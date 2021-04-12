@@ -1,7 +1,7 @@
 /**
  * @file Account.h
  * @author your name (you@domain.com)
- * @brief 
+ * @brief Header file for account
  * @version 0.1
  * @date 2021-04-09
  * 
@@ -20,8 +20,8 @@
  * 
  */
 typedef enum error {
-    ERROR_File_Not_Present = -1, /**< Failer File not Present */
-    SUCCESS = 0                 /**< Compute operation is successful */
+    ERROR_File = -1, /**< Failer File not Present */
+    SUCCESS = 0                  /**< Compute operation is successful */
 }error;
 
 /**

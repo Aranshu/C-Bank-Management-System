@@ -22,7 +22,7 @@ error account_list()
     if (!file_pointer)
     {
         printf("Can't open file\n");
-        return ERROR_File_Not_Present;
+        return ERROR_File;
     }
     else 
     {
