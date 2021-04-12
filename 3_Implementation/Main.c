@@ -31,10 +31,12 @@ login:
         char username[15],password[12];   
         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
         printf("\n\tLOGIN PAGE\n\n");
-        printf("Exter Your Username:\t");
+        printf("Enter Your Username:\t");
         scanf("%13s",&username);
-        printf("Exter Your Password:\t");
+        fflush(stdin);
+        printf("Enter Your Password:\t");
         scanf("%10s",&password);
+        fflush(stdin);
         if(login(username,password))
         {
         int flag=0;
@@ -44,7 +46,8 @@ main_menu:
                 system("cls||clear"); 
                 flag=0;
                 char choice_main_menu='`';
-                printf("\n\t\t\tCustomer Account Banking Management System\n\n");
+                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                printf("\n  Customer Account Banking Management System\n\n");
                 printf("Press 1 to Create new account\n");
                 printf("Press 2 to Update information of existing account\n");
                 printf("Press 3 to Removing existing account\n");
@@ -53,31 +56,39 @@ main_menu:
                 printf("Press 6 to delete all account\n");
                 printf("Press 7 to Open calculator\n");
                 printf("Press 8 to change login credentials\n");
-                printf("Press 9 for login page\n");
+                printf("Press 9 to logout\n");
+                printf("Press e to exit application\n");
                 printf("\nPlease enter your choice:\t");
                 scanf("%1s",&choice_main_menu);
+                fflush(stdin);
                 switch(choice_main_menu)
                 {
-                        case'1':system("cls||clear"); 
+                        case'1':system("cls||clear");
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n"); 
                                 account_create();
                                 getch(); 
                                 break;
                         case'2':system("cls||clear"); 
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 account_update();
                                 getch();
                                 break;
                         case'3':system("cls||clear"); 
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 getch();
                                 break;
                         case'4':system("cls||clear"); 
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 account_Record();
                                 getch();
                                 break;
                         case'5':system("cls||clear"); 
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 account_list();
                                 getch();
                                 break;
                         case'6':system("cls||clear"); 
+                                printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 account_delete_all();
                                 getch();
                                 break;
@@ -88,7 +99,8 @@ main_menu:
                                         char choice_sub_menu='`';
                                         struct calculator calculator_number1;
                                         struct calculator calculator_number2;
-                                        printf("\n\t\tWelcome to calculator\n\n");
+                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n");
+                                        printf("\n\tWelcome to calculator\n\n");
                                         printf("Press + for addition\n");
                                         printf("Press - for subtraction\n");
                                         printf("Press * for multiplication\n");
@@ -99,10 +111,12 @@ main_menu:
                                         printf("Press m for main menu\n");
                                         printf("\nPlease enter your choice:\t");
                                         scanf("%1s",&choice_sub_menu);
+                                        fflush(stdin);
                                         switch(choice_sub_menu)
                                         {
                                                 case'+':system("cls||clear"); 
-                                                        printf("\t\t\tAddition\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tAddition\n\n");
                                                         printf("Enter the first number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the secound number:\t");
@@ -111,7 +125,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'-':system("cls||clear"); 
-                                                        printf("\t\t\tSubtraction\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tSubtraction\n\n");
                                                         printf("Enter the first number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the secound number:\t");
@@ -120,7 +135,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'*':system("cls||clear"); 
-                                                        printf("\t\t\tMultiplication\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tMultiplication\n\n");
                                                         printf("Enter the first number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the secound number:\t");
@@ -129,7 +145,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'/':system("cls||clear"); 
-                                                        printf("\t\t\tDivision\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tDivision\n\n");
                                                         printf("Enter the first number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the secound number:\t");
@@ -141,7 +158,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'^':system("cls||clear"); 
-                                                        printf("\t\t\tPower\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tPower\n\n");
                                                         printf("Enter the number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the Power:\t\t");
@@ -153,7 +171,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'!':system("cls||clear"); 
-                                                        printf("\t\t\tFactorial\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tFactorial\n\n");
                                                         printf("Enter the number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         if(factorial(&calculator_number1)==-1)
@@ -163,7 +182,8 @@ main_menu:
                                                         getch();
                                                         break;
                                                 case'?':system("cls||clear"); 
-                                                        printf("\t\t\tModulus\n");
+                                                        printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
+                                                        printf("\t\tModulus\n\n");
                                                         printf("Enter the first number:\t\t");
                                                         scanf("%d",&calculator_number1.number);
                                                         printf("Enter the secound number:\t");
@@ -174,6 +194,7 @@ main_menu:
                                                         printf("Result is:\t\t\t%d\n",modulus(&calculator_number1,&calculator_number2));
                                                         getch();    
                                                 case'm':flag=2;
+                                                        fflush(stdin);
                                                         break;
                                                 default:system("cls||clear"); 
                                                         printf("Please enter a valid choice\n"); 
@@ -187,6 +208,10 @@ main_menu:
                                 getch();
                                 break;
                         case'9':flag=1;
+                                fflush(stdin);
+                                break;
+                        case'0':exit(0);
+                                fflush(stdin);
                                 break;
                         default:system("cls||clear");
                                 printf("Please enter a valid choice\n"); 
@@ -204,6 +229,6 @@ main_menu:
                 getch();
                 goto login;
         }
-
+        system("exit||exit 1");
         return 0;
 }

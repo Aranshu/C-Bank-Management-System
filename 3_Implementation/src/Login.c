@@ -21,12 +21,21 @@
 bool login(char username[15],char password[12])
 {
     char buffer[1024];
-    int table_row = 0;
-    int table_column = 0;
+    char table_row[15];
+    char table_column[12];
     int flag_username=1;
     int flag_password=1;
-
-    FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.csv", "a+");
+    FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.dat", "r");
+    while (fscanf(file_pointer,"%13s %10s",table_row,table_column)) 
+    if(strcmp(username,table_row)==0 && strcmp(password,table_column)==0)
+    {
+        return true;
+    }
+    else
+    {
+         return false;
+    }
+   /* FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.csv", "r");
     while (fgets(buffer,1024,file_pointer)) 
     {
         table_column = 0;
@@ -36,11 +45,11 @@ bool login(char username[15],char password[12])
         {
             if(table_column == 0)
             {
-               flag_username=strcmp(value,username);
+               flag_username=strcmp(username,value);
             }
             if(table_column == 1)
             {
-                flag_password=strcmp(value,password);
+                flag_password=strcmp(password,value);
 
             }                    
             value = strtok(NULL, ", ");
@@ -53,5 +62,5 @@ bool login(char username[15],char password[12])
         return true;
     }
     else
-        return false;
+        return false;*/
 }

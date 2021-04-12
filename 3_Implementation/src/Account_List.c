@@ -30,7 +30,7 @@ error account_list()
         int table_row = 0;
         int table_column = 0;
 
-        printf("\n\t\tList of all account\n\n");
+        printf("\n     List of all account\n\n");
         while (fgets(buffer,1024,file_pointer)) 
         {
             table_column = 0;

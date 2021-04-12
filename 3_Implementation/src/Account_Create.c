@@ -22,7 +22,7 @@ error account_create()
     char holder_name[50];
     int holder_account_number=0, holder_amount=0;
 
-    printf("\n\t\t\tCreate new account\n\n");
+    printf("\n\tCreate new account\n\n");
     printf("Enter Account Holder Name:\t");
     scanf("%50s", &holder_name);
     printf("Enter Account Number:\t\t");

@@ -23,7 +23,7 @@ error account_Record()
     int table_row_temp=-1;
    
     char value_temp[10];
-    printf("\n\t\tCheck the detail of existing account\n\n");
+    printf("\n Check the detail of existing account\n\n");
     printf("Enter account number:\t");
     scanf("%10s",&value_temp);
 

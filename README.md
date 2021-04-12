@@ -5,8 +5,7 @@
 
 Visit [Pages for Report -optional](using github.io option)
 
-B|Build|Unit Test|cppcheck|Valgrind|Codacy|
-|:--:|:--:|:--:|:--:|:--:|
+
 
 
 ## Default Login Details

@@ -1,0 +1,25 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Default Window=main
+Default topic=index.html
+Language=0x409 English (United States)
+Title=Bank Management system
+
+[WINDOWS]
+main="Bank Management system",,,"index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+index.html
+bc_s.png
+bdwn.png
+closed.png
+nav_f.png
+nav_h.png
+open.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png

@@ -18,7 +18,7 @@
 error account_delete_all()
 {
     int flag=0;
-    printf("\n\t\t\tDelete all account\n\n");
+    printf("\n\t   Delete all account\n\n");
     printf("Warning all Account will be deleted Permanently\n\nPress enter to delete\nPress esc to move to safe zone\n\nPlease enter your choice:\t\t");
     if((flag=getch())!=27)
     {
