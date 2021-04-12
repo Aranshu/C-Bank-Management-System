@@ -7,7 +7,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 B|Build|Unit Test|cppcheck|Valgrind|Codacy|
 |:--:|:--:|:--:|:--:|:--:|
-|![C/C++ CI](https://github.com/stepin654321/MiniProject_Template/workflows/C/C++%20CI/badge.svg)|![Unit testing](https://github.com/stepin654321/MiniProject_Template/workflows/Unit%20testing/badge.svg)|![cppcheck-action](https://github.com/stepin654321/MiniProject_Template/workflows/cppcheck-action/badge.svg)|![Valgrind](https://github.com/stepin654321/MiniProject_Template/workflows/Valgrind/badge.svg)| x not created |
+
 
 ## Default Login Details
 Username             | Password
