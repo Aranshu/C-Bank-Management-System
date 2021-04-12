@@ -2,9 +2,9 @@
 
 ## High Level Design 
 
-![HighLevelDesign]()
+![HighLevelDesign](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/High%20Level%20Design.png)
 
 
 ## Low Level Design 
 
-![LowLevelDesign]()
+![LowLevelDesign](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Low%20Level%20Design.png)

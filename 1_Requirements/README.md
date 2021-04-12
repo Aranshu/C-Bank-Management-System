@@ -14,7 +14,7 @@
 | 20   |        | 59 kb |
 
 ## Defining Our System
-![Description]()
+![Description](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Flow%20Char.png)
 ### Explanation:
 * Bank Management System  have few inbuilt features like:
     * Create new account
