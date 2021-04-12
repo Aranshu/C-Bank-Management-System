@@ -1,10 +1,11 @@
 name: Unit Testing - Unity
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  warkflow_dispatch
+  #push:
+  #  branches: [ main ]
+  # pull_request:
+  #  branches: [ main ]
 
 jobs:
   test:
