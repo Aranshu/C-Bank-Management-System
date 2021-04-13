@@ -21,7 +21,7 @@ void login_datail_update()
     printf("Warning login credential will change Permanently\n\nPress enter to change login details Press esc to move to safe zone\n\nPlease enter your choice:\t\t");
     if((flag=getch())!=27)
     {
-        FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.dat", "w");
+        FILE* file_pointer = fopen("../../7_Other/data-set/Login_Detail.dat", "w");
         char username[15],password[12];
     
         printf("\n\nPlease Enter your new username:\t\t");

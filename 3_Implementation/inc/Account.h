@@ -19,38 +19,77 @@
  * @brief Error values for calculator operations
  * 
  */
-typedef enum error {
-    ERROR_File = -1, /**< Failer File not Present */
-    SUCCESS = 0                  /**< Compute operation is successful */
-}error;
+typedef struct account_t {
+    char holder_name[50];
+    int holder_account_number;
+    int holder_amount;               
+}account_t;
 
 /**
  * @brief function for creating account
  * 
- * @return error 
+ * @return void
  */
-error account_create();
+void admin_account_create(void);
 
 /**
  * @brief function for deleting all account
  * 
- * @return error 
+ * @return void 
  */
-error account_delete_all();
+void admin_account_delete_all(void);
+
+/**
+ * @brief function for deleting single account
+ * 
+ */
+void admin_account_delete(void);
 
 /**
  * @brief function for printing account list
  * 
- * @return error 
  */
-error account_list();
+void admin_account_list(void);
 
 /**
- * @brief Displaying a particular record
- * 
- * @return error 
+ * @brief function for printing a particular record
+ *  
  */
-error account_Record();
+void admin_account_Record(void);
+
+/**
+ * @brief  function for updating account datail
+ * 
+ */
+void admin_account_update();
+
+/**
+ * @brief Function to check balance
+ * 
+ * @param account_number_temp account number of customer
+ */
+void customer_account_balance(int account_number_temp);
+
+/**
+ * @brief function for checking detail
+ * 
+ * @param account_number_temp account number of customer
+ */
+void customer_account_detail(int account_number_temp);
 
 
-void account_update();
+/**
+ * @brief function to make withdrawl
+ * 
+ * @param account_number_temp account number of customer
+ */
+void customer_account_withdrawl(int account_number_temp);
+
+/**
+ * @brief Function used Login customer
+ * 
+ * @param account_number_temp account number of customer
+ * @return true 
+ * @return false 
+ */
+bool login_customer (int account_number_temp);

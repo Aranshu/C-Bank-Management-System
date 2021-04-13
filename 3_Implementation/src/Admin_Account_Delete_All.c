@@ -1,9 +1,9 @@
 /**
- * @file Account_Delete_All.c
+ * @file Admin_Account_Delete_All.c
  * @author your name (you@domain.com)
  * @brief c file for Account.h
  * @version 0.1
- * @date 2021-04-09
+ * @date 2021-04-13
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -13,9 +13,9 @@
 /**
  * @brief function for deleting all account
  * 
- * @return error 
+ * @return void
  */
-error account_delete_all()
+void admin_account_delete_all(void)
 {
     int flag=0;
     printf("\n\t   Delete all account\n\n");
@@ -23,11 +23,11 @@ error account_delete_all()
     if((flag=getch())!=27)
     {
         printf("\n\nAll content of the file are Deleted\t"); 
-        fclose(fopen("../7_Other/data-set/Account_Datail.csv", "w"));
+        fclose(fopen("../../7_Other/data-set/Account_Datail.dat", "w"));
+        fclose(fopen("../../7_Other/data-set/Account_Datail_temp.dat", "w"));
     }
     else
     {
         printf("\n\nNo content of the file are Deleted\t");
     }
-    return  SUCCESS;
 }

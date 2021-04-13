@@ -10,11 +10,12 @@ INC = -Iinc\
 -Iunity
 
 # All source code files
-SRC = src/Account_Create.c\
-src/Account_Delete_All.c\
-src/Account_List.c\
-src/Account_Record.c\
-src/Account_Update.c\
+SRC = src/Admin_Account_Create.c\
+src/Admin_Account_Delete_All.c\
+src/Admin_Account_Delete.c\
+src/Admin_Account_List.c\
+src/Admin_Account_Record.c\
+src/Admin_Account_Update.c\
 src/Calculator_Addition.c\
 src/Calculator_Division.c\
 src/Calculator_Factorial.c\
@@ -22,9 +23,14 @@ src/Calculator_Modulus.c\
 src/Calculator_Multiplication.c\
 src/Calculator_Power.c\
 src/Calculator_Subtraction.c\
+src/Customer_Account_Balance.c\
+src/Customer_Account_Detail.c\
+src/Customer_Account_Withdrawl.c\
 src/File_Check_All.c\
-src/Login_Detail_Update.c\
-src/Login.c
+src/Login_Admin.c\
+src/Login_Customer.c\
+src/Login_Detail_Update.c
+
 # All test source files
 TEST_SRC = test/Test_Account_Calculator.c\
 unity/unity.c

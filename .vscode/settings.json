@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "cstdlib": "c",
-        "headerfile.h": "c"
+        "headerfile.h": "c",
+        "account.h": "c"
     },
     "C_Cpp.dimInactiveRegions": false
 }

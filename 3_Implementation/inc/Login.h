@@ -29,4 +29,5 @@ void login_datail_update();
  * @return true 
  * @return false 
  */
-bool login(char username[15],char password[12]);
+bool login_admin(char username[15],char password[12]);
+
