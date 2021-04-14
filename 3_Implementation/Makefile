@@ -2,8 +2,16 @@
 PROJ_NAME = BankManagementSystem
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
+# Output directory
+BUILD_DIR = build
+
+# All include folders with header files
+INC = -Iinc\
+-Iunity
+
 # All source code files
-SRC = src/Admin_Account_Create.c\
+SRC = main.c\
+src/Admin_Account_Create.c\
 src/Admin_Account_Delete_All.c\
 src/Admin_Account_Delete.c\
 src/Admin_Account_List.c\
@@ -28,13 +36,12 @@ src/Login_Detail_Update.c
 TEST_SRC = test/Test_Account_Calculator.c\
 unity/unity.c
 
-COV_SRC = Test_Account_Calculator.c
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
 
-INC_H = inc
-INC_T = unity
-
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
-   RM = del 
+   RM = del /q
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
@@ -44,43 +51,46 @@ else
 	  EXEC = out
    endif
 endif
-.PHONY: run clean test doc all
 
-all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
-	
-run:
-	$(call FixPath,$(PROJ_NAME).$(EXEC))
-test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+# Run the target even if the matching name exists
+.PHONY : all test coverage run clean doc
 
-coverage:
-	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
-	$(RM) *.DAT
-	$(RM) test.c
+# Project Output name
+all:$(BUILD_DIR)
+	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+# Call `make run` to run the application
+run: all
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+# Build and run the unit tests
+test: $(SRC) $(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:${PROJECT_NAME}
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+# Document the code using Doxygen
+doc:
+	make  -C ./documentation
+
+# Remove all the built files, invoke by `make clean`
+clean:
+	$(RM) $(call FixPath,$(BUILD_DIR)*.$(EXEC))
+	make clean ./documentation
+	rmdir $(BUILD_DIR) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
 
 
-cppcheck:
-	cppcheck --enable=all $(SRC) main.c
 debug:
 	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
 	gdb $(PROJ_NAME).$(EXEC)
 
 valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
-
-
-clean:
-	$(RM) *.DAT
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
