@@ -48,7 +48,7 @@ Bank Management System offers a range of benefits to providers medium and small.
     * Change login credentials
 
 ## SWOT ANALYSIS
-![SWOT Analysis]
+![SWOT Analysis](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/SWOT.PNG?raw=true)
 
 # 4W&#39;s and 1&#39;H
 
