@@ -28,7 +28,7 @@ int main()
 {
 start:
         system("cls||clear");  
-        int choice=0;
+        int choice=0; //intialization of choice for home page
         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
         printf("\nHome Page Banking Management System\n\n");
         printf("Press 1 to enter into Admin Page\n");
@@ -57,7 +57,7 @@ main_menu:
                         {
                                 system("cls||clear"); 
                                 flag=0;
-                                char choice_main_menu='`';
+                                char choice_main_menu='`'; //intialization of choice_main_menu for main menu
                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                 printf("\n  Customer Account Banking Management System\n\n");
                                 printf("Press 1 to Create new account\n");
@@ -109,7 +109,7 @@ main_menu:
                                                 {
                                                         system("cls||clear"); 
                                                         flag=0;
-                                                        char choice_sub_menu='`';
+                                                        char choice_sub_menu='`'; //intialization of choice_sub_menu for sub menu
                                                         struct calculator calculator_number1;
                                                         struct calculator calculator_number2;
                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n");
@@ -241,7 +241,7 @@ main_menu:
         }
         else if(choice==2)
         {
-        login_customer:       
+login_customer:       
                 system("cls||clear");  
                 int account_number_temp=-1;
                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -261,7 +261,7 @@ main_menu:
                                 printf("Press 3 to view your details\n");
                                 printf("Press 0 to exit application\n");
                                 printf("\nEnter Your Choice:\t");
-                                scanf("%d",&choice_customer);
+                                scanf("%d",&choice_customer); //intialization of choice_customer for customer menu
                                 fflush(stdin);
                                 switch (choice_customer)
                                 {

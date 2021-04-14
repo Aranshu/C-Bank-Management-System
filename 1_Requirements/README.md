@@ -15,19 +15,19 @@ In the recent years, computers are included in almost all kind of works and jobs
 Bank Management System offers a range of benefits to providers medium and small.. Here are just a few of them:
 
 ### Better Account Management
-* 
+* This application provides you a mechanism store, update and delete account details as per your requirement.
 
 ### Less burden on employs 
-* 
+* As it is automated so no mannual work is required.
 
 ### Reduce Time
-* 
+* The seaching of a account is very easy as well as updation of account balance is automated.
 
 ### Secured
-* 
+* The applicated is secured using login page so only authorized person can view, update the account
 
 ### Organization
-* 
+* The organization of diffrent file is automated no need to work about how data is saved and extracted.
 
 ## Cost and Features with Time 
 | Time | Feature | Cost |
@@ -53,18 +53,19 @@ Bank Management System offers a range of benefits to providers medium and small.
 # 4W&#39;s and 1&#39;H
 
 ## Who:
-* 
+* Small/Medium size bank can use this application
+
 ## What:
-* 
+* They can use it to manage the account of their customer
 
 ## When:
-* 
+* This problem emerge when the cutomer base of bank increased rapidly
 
 ## Where:
-* 
+* It can be Run on both os linux and window as well as 
 
 ## How:
-* 
+* It will help banks to keep thier customer account updated and will also enable cutomer to make a withdrawl
 
 # Detail requirements
 ## High Level Requirements: 

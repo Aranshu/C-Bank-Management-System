@@ -10,7 +10,8 @@ INC = -Iinc\
 -Iunity
 
 # All source code files
-SRC = src/Admin_Account_Create.c\
+SRC = main.c\
+src/Admin_Account_Create.c\
 src/Admin_Account_Delete_All.c\
 src/Admin_Account_Delete.c\
 src/Admin_Account_List.c\
@@ -56,7 +57,7 @@ endif
 
 # Project Output name
 all:$(BUILD_DIR)
-	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # Call `make run` to run the application
 run: all
@@ -78,7 +79,7 @@ doc:
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR))
+	$(RM) $(call FixPath,$(BUILD_DIR)*.$(EXEC))
 	make clean ./documentation
 	rmdir $(BUILD_DIR) $(DOCUMENTATION_OUTPUT)
 
