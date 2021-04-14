@@ -78,32 +78,25 @@ main_menu:
                                         case'1':system("cls||clear");
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n"); 
                                                 admin_account_create();
-                                                getch(); 
                                                 break;
                                         case'2':system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 admin_account_update();
-                                                getch();
                                                 break;
                                         case'3':system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 admin_account_delete();
-                                                getch();
                                                 break;
                                         case'4':system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 admin_account_Record();
-                                                getch();
-                                                break;
                                         case'5':system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 admin_account_list();
-                                                getch();
                                                 break;
                                         case'6':system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 admin_account_delete_all();
-                                                getch();
                                                 break;
                                         case'7':do
                                                 {
@@ -135,7 +128,6 @@ main_menu:
                                                                         printf("Enter the secound number:\t");
                                                                         scanf("%d",&calculator_number2.number);
                                                                         printf("Result is:\t\t\t%d\n",addition(&calculator_number1,&calculator_number2));
-                                                                        getch();
                                                                         break;
                                                                 case'-':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -145,7 +137,7 @@ main_menu:
                                                                         printf("Enter the secound number:\t");
                                                                         scanf("%d",&calculator_number2.number);
                                                                         printf("Result is:\t\t\t%d\n",subtraction(&calculator_number1,&calculator_number2));
-                                                                        getch();
+                                                                        
                                                                         break;
                                                                 case'*':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -155,7 +147,7 @@ main_menu:
                                                                         printf("Enter the secound number:\t");
                                                                         scanf("%d",&calculator_number2.number);
                                                                         printf("Result is:\t\t\t%d\n",multiplication(&calculator_number1,&calculator_number2));
-                                                                        getch();
+                                                                       
                                                                         break;
                                                                 case'/':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -168,7 +160,7 @@ main_menu:
                                                                                 printf("Result is:\t\t\tError\n");
                                                                         else
                                                                                 printf("Result is:\t\t\t%d\n",division(&calculator_number1,&calculator_number2));
-                                                                        getch();
+                                                                    
                                                                         break;
                                                                 case'^':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -181,7 +173,7 @@ main_menu:
                                                                                 printf("\nPlease enter a positive number to find factorial and try again\nFactorial can't be found for negative values. It can be only positive or 0 \n");
                                                                         else
                                                                                 printf("Result is:\t\t\t%d\n",power(&calculator_number1,&calculator_number2));
-                                                                        getch();
+                                                                        
                                                                         break;
                                                                 case'!':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -192,7 +184,7 @@ main_menu:
                                                                                 printf("\nPlease enter a positive number to find factorial and try again\nFactorial can't be found for negative values. It can be only positive or 0 \n");
                                                                         else
                                                                                 printf("Result is:\t\t\t%d\n",factorial(&calculator_number1));
-                                                                        getch();
+                                                                       
                                                                         break;
                                                                 case'?':system("cls||clear"); 
                                                                         printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
@@ -205,26 +197,26 @@ main_menu:
                                                                                 printf("Result is:\t\t\tError\n");
                                                                         else
                                                                         printf("Result is:\t\t\t%d\n",modulus(&calculator_number1,&calculator_number2));
-                                                                        getch();    
+                                                                          
                                                                 case'm':flag=2;
                                                                         break;
                                                                 default:system("cls||clear"); 
                                                                         printf("Please enter a valid choice\n"); 
-                                                                        getch();
+                                                                        
                                                         }
                                                 }
                                                 while (flag!=2);
                                                 goto main_menu;
                                         case'8':system("cls||clear");
                                                 login_datail_update(); 
-                                                getch();
+                                                
                                                 break;
                                         case'9':flag=1;
                                                 break;
                                         case'0':exit(0);
                                         default:system("cls||clear");
                                                 printf("\nPlease enter a valid choice\n"); 
-                                                getch();
+                                               
                                 }
                         } 
                         while (flag!=1);
@@ -234,7 +226,7 @@ main_menu:
                 {
                         system("cls||clear"); 
                         printf("Wrong Credentials\n");
-                        getch();
+                        
                         goto login_admin;
                 }
                 system("exit||exit 1");
@@ -268,22 +260,22 @@ login_customer:
                                         case 1 :system("cls||clear");  
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 customer_account_balance(account_number_temp);
-                                                getch();
+                                                
                                                 break;
                                         case 2 :system("cls||clear");
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 customer_account_withdrawl(account_number_temp);
-                                                getch();
+                                                
                                                 break;
                                         case 3 :system("cls||clear"); 
                                                 printf("\n\t\t\t\t\t\tBANK MANAGEMENT SYSTEM\n\n");
                                                 customer_account_detail(account_number_temp);
-                                                getch();
+                                                
                                                 break;
                                         case 0 :exit(0);
                                         default:system("cls||clear"); 
                                                 printf("Please enter a valid choice\n"); 
-                                                getch();
+                                               
                                                 break;
                                 }
                         }
@@ -294,7 +286,7 @@ login_customer:
                 {
                         system("cls||clear");
                         printf("Wrong Credentials\n");
-                        getch();
+                      
                         goto login_customer;
                 }
         }
@@ -303,7 +295,6 @@ login_customer:
         {
                 system("cls||clear");  
                 printf("\nPlease enter a valid choice\n");
-                getch();
                 goto start;
         }
 return 0;
