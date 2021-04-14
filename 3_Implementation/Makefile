@@ -69,7 +69,7 @@ all:$(BUILD_DIR)
 
 # Call `make run` to run the application
 run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # Build and run the unit tests
 # test: $(SRC) $(TEST_SRC)
@@ -79,7 +79,7 @@ run: all
 # Build and run the unit tests
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
