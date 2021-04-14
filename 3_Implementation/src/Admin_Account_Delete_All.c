@@ -18,9 +18,11 @@
 void admin_account_delete_all(void)
 {
     int flag=0;
+    char temp;
     printf("\n\t   Delete all account\n\n");
     printf("Warning all Account will be deleted Permanently\n\nPress enter to delete\nPress esc to move to safe zone\n\nPlease enter your choice:\t\t");
-    if((flag=getch())!=27)
+    scanf("%1s",temp);
+    if((flag=temp)!=27)
     {
         printf("\n\nAll content of the file are Deleted\t"); 
         fclose(fopen("../../7_Other/data-set/Account_Datail.dat", "w"));
