@@ -15,4 +15,11 @@
  */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <stdbool.h>  
+
+/**
+ * @brief Customized getch to stop output screen
+ * 
+ */
+void getch(void);

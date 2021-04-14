@@ -20,7 +20,8 @@ void login_datail_update()
     char temp;
     printf("\n\t\t\tLogin account reset\n\n");
     printf("Warning login credential will change Permanently\n\nPress enter to change login details Press esc to move to safe zone\n\nPlease enter your choice:\t\t");
-    scanf("%1s",temp);
+    scanf("%ch",temp);
+    fflush(stdin);
     if((flag=temp)!=27)
     {
         FILE* file_pointer = fopen("../../7_Other/data-set/Login_Detail.dat", "w");

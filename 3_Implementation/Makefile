@@ -27,7 +27,7 @@ src/Calculator_Subtraction.c\
 src/Customer_Account_Balance.c\
 src/Customer_Account_Detail.c\
 src/Customer_Account_Withdrawl.c\
-src/File_Check_All.c\
+src/Customized_Getch.c\
 src/Login_Admin.c\
 src/Login_Customer.c\
 src/Login_Detail_Update.c
@@ -69,11 +69,6 @@ all:$(BUILD_DIR)
 # Call `make run` to run the application
 run: all
 	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
-
-# Build and run the unit tests
-# test: $(SRC) $(TEST_SRC)
-#	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-#	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 # Build and run the unit tests
 test:$(BUILD)

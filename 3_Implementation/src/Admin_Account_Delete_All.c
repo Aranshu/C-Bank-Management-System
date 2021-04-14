@@ -21,7 +21,8 @@ void admin_account_delete_all(void)
     char temp;
     printf("\n\t   Delete all account\n\n");
     printf("Warning all Account will be deleted Permanently\n\nPress enter to delete\nPress esc to move to safe zone\n\nPlease enter your choice:\t\t");
-    scanf("%1s",temp);
+    scanf("%c",temp);
+    fflush(stdin);
     if((flag=temp)!=27)
     {
         printf("\n\nAll content of the file are Deleted\t"); 

@@ -61,7 +61,7 @@ void admin_account_Record(void);
  * @brief  function for updating account datail
  * 
  */
-void admin_account_update();
+void admin_account_update(void);
 
 /**
  * @brief Function to check balance

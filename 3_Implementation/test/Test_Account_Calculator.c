@@ -11,7 +11,6 @@
 //#include "Account.h"
 #include "Calculator.h"
 #include "unity.h"
-#include "FileCheck.h"
 
 /**
  * @brief static Object of Structure calculator
@@ -36,19 +35,6 @@ void setUp()
 void tearDown()
 {
 }
-
-/**
- * @brief Used to test file presence
- * 
- */
-//void check_file_all(void)
-//{
-    /**
-     * @brief positive test case
-     * 
-     */
-  //  TEST_ASSERT_EQUAL(SUCCESS_File_Present,file_check_all());
-//}
 
 /**
  * @brief Used to test addition function
@@ -285,7 +271,6 @@ int main(void)
      * @brief Run Test functions
      * 
      */
-  //  RUN_TEST(check_file_all);
     RUN_TEST(test_addition);
     RUN_TEST(test_subtraction);
     RUN_TEST(test_multiplication);
