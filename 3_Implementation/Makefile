@@ -40,7 +40,6 @@ src/Calculator_Modulus.c\
 src/Calculator_Multiplication.c\
 src/Calculator_Power.c\
 src/Calculator_Subtraction.c\
-src/File_Check_All.c\
 test/Test_Account_Calculator.c\
 unity/unity.c
 
