@@ -10,7 +10,7 @@ INC = -Iinc\
 -Iunity
 
 # All source code files
-SRC = main.c\
+SRC = Main.c\
 src/Admin_Account_Create.c\
 src/Admin_Account_Delete_All.c\
 src/Admin_Account_Delete.c\
