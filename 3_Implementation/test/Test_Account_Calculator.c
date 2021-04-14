@@ -17,8 +17,8 @@
  * @brief static Object of Structure calculator
  * 
  */
-static calculator calculator_number1;
-static calculator calculator_number2;
+calculator calculator_number1;
+calculator calculator_number2;
 
 
 /**
