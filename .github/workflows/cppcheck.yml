@@ -11,5 +11,5 @@ jobs:
         
       - name: Install cppcheck
         run: sudo apt-get -y install cppcheck
-      - name: Cppcheck code
+      - name: Cppcheck 
         run: cppcheck 3_Implementation 

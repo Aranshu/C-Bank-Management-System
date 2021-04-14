@@ -33,13 +33,19 @@ src/Login_Customer.c\
 src/Login_Detail_Update.c
 
 # All test source files
-TEST_SRC = test/Test_Account_Calculator.c\
+TEST_SRC = src/Calculator_Addition.c\
+src/Calculator_Division.c\
+src/Calculator_Factorial.c\
+src/Calculator_Modulus.c\
+src/Calculator_Multiplication.c\
+src/Calculator_Power.c\
+src/Calculator_Subtraction.c\
+src/File_Check_All.c\
+test/Test_Account_Calculator.c\
 unity/unity.c
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
-
-INCLUDE_LIBS = -lcunit
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
@@ -72,7 +78,7 @@ run: all
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(INCLUDE_LIBS)
+	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
