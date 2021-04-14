@@ -39,6 +39,8 @@ unity/unity.c
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
 
+INCLUDE_LIBS = -lcunit
+
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
    RM = del /q
@@ -64,8 +66,13 @@ run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # Build and run the unit tests
-test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+# test: $(SRC) $(TEST_SRC)
+#	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+#	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(INCLUDE_LIBS)
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
