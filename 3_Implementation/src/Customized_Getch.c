@@ -17,6 +17,7 @@
  */
 void getch(void)
 {
+        fflush(stdin);
         char *s = (char *)malloc(1*sizeof(int));
         scanf("%c",s);
         free(s);
