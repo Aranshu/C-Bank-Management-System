@@ -18,16 +18,16 @@ Bank Management System offers a range of benefits to providers medium and small.
 * This application provides you a mechanism store, update and delete account details as per your requirement.
 
 ### Less burden on employs 
-* As it is automated so no mannual work is required.
+* Application is automated so no mannual work is required.
 
 ### Reduce Time
-* The seaching of a account is very easy as well as updation of account balance is automated.
+* Seaching of a account is very easy as well as updation of account balance is automated.
 
 ### Secured
-* The applicated is secured using login page so only authorized person can view, update the account
+* Applicated is secured using login page so only authorized person can view, update the account
 
-### Organization
-* The organization of diffrent file is automated no need to work about how data is saved and extracted.
+### organized
+* Organization of file is automated no manual work requied. 
 
 ## Cost and Features with Time 
 | Time | Feature | Cost |
@@ -48,6 +48,7 @@ Bank Management System offers a range of benefits to providers medium and small.
     * Delete all account
     * Open calculator
     * Change login credentials
+    * Making a withdrawl
 
 ## SWOT ANALYSIS
 ![SWOT Analysis](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/SWOT.PNG?raw=true)
@@ -58,13 +59,13 @@ Bank Management System offers a range of benefits to providers medium and small.
 * Small/Medium size bank can use this application
 
 ## What:
-* They can use it to manage the account of their customer
+* They can use it to manage the account of their customer and can provide a way for the customer to make a withdrawl
 
 ## When:
-* This problem emerge when the cutomer base of bank increased rapidly
+* This problem emerge when the cutomer base of bank increased rapidly and multiple transactions take place simultaneously
 
 ## Where:
-* It can be Run on both os linux and window as well as 
+* Bank Management System can be Run on both os linux and window as well as 
 
 ## How:
 * It will help banks to keep thier customer account updated and will also enable cutomer to make a withdrawl
@@ -79,8 +80,10 @@ Bank Management System offers a range of benefits to providers medium and small.
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LLR1 | Login System | HLR1 | TBD-S1 |
+| LLR1 | Login System Admin | HLR1 | TBD-S1 |
+| LLR1 | Login System Customer| HLR1 | TBD-S1 |
 | LLR2 | Account Management System | HLR2 | TBD-S1 |
+| LLR2 | Withdrawl mechanism | HLR2 | TBD-S1 |
 | LLR2 | Calculator | HLR3 | TBD-S1 |
 
 
