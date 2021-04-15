@@ -10,7 +10,7 @@
 
 
 
-## Default Login Details
+## Default Login Credentials
 Username             | Password
 ---------------------|------------------------------------------
 root                 | root
@@ -30,7 +30,7 @@ Folder               | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`258331` | Aranshu Bansal  | Feature A, B etc    | X No     | X No   |X No   |X No     
+`258331` | Aranshu Bansal  | Account Manahement & Calculator    | No     | No   | 7   | 7 |     
    
 
 ## Challenges Faced and How Was It Overcome
@@ -41,9 +41,7 @@ SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 4. ...
 
 ## Learning Resources
-1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
-3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
+1. [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/)
+2. [tutorialspoint](https://www.tutorialspoint.com/cprogramming/index.htm)
 
 
