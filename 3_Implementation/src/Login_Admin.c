@@ -21,7 +21,7 @@
 bool login_admin(char username[15],char password[12])
 {
     char username_temp[15],password_temp[12];
-    FILE* file_pointer = fopen("../../7_Other/data-set/Login_Detail.dat", "r");
+    FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.dat", "r");
     while (fscanf(file_pointer,"%13s %10s",username_temp,password_temp)) 
         if(strcmp(username,username_temp)==0 && strcmp(password,password_temp)==0)
         {

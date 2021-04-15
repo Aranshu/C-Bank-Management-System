@@ -19,8 +19,8 @@ void customer_account_withdrawl(int account_number_temp)
 {  
     account_t user_data;
 
-    FILE* file_pointer= fopen("../../7_Other/data-set/Account_Datail.dat", "r");
-    FILE* file_pointer_temp= fopen("../../7_Other/data-set/Account_Datail_temp.dat", "w");
+    FILE* file_pointer= fopen("../7_Other/data-set/Account_Datail.dat", "r");
+    FILE* file_pointer_temp= fopen("../7_Other/data-set/Account_Datail_temp.dat", "w");
     printf("\n     Money Withdrawl\n\n");
     while (fscanf(file_pointer,"%50s %d %d",user_data.holder_name,&user_data.holder_account_number,&user_data.holder_amount)!=EOF)
     {
@@ -29,8 +29,8 @@ void customer_account_withdrawl(int account_number_temp)
     fclose(file_pointer);
     fclose(file_pointer_temp);
 
-    FILE* file_pointer_updated= fopen("../../7_Other/data-set/Account_Datail.dat", "w");
-    FILE* file_pointer_temp_updated= fopen("../../7_Other/data-set/Account_Datail_temp.dat", "r");
+    FILE* file_pointer_updated= fopen("../7_Other/data-set/Account_Datail.dat", "w");
+    FILE* file_pointer_temp_updated= fopen("../7_Other/data-set/Account_Datail_temp.dat", "r");
     int holder_amount_temp=0,flag=0;
     while (fscanf(file_pointer_temp_updated,"%50s %d %d",user_data.holder_name,&user_data.holder_account_number,&user_data.holder_amount)!=EOF)
     {
@@ -57,6 +57,6 @@ void customer_account_withdrawl(int account_number_temp)
         printf("\n\nInsufficient balance");
     fclose(file_pointer_updated);
     fclose(file_pointer_temp_updated);
-    fclose(fopen("../../7_Other/data-set/Account_Datail_temp.dat", "w"));
+    fclose(fopen("../7_Other/data-set/Account_Datail_temp.dat", "w"));
 
 }

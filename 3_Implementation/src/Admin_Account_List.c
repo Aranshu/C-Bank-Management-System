@@ -19,7 +19,7 @@ void admin_account_list()
 {
     account_t user_data;
     char temp;
-    FILE* file_pointer= fopen("../../7_Other/data-set/Account_Datail.dat", "r");
+    FILE* file_pointer= fopen("../7_Other/data-set/Account_Datail.dat", "r");
     printf("\n     List of all account\n\n");
     while (fscanf(file_pointer,"%50s %d %d",user_data.holder_name,&user_data.holder_account_number,&user_data.holder_amount)!=EOF)
     {

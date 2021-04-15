@@ -18,19 +18,19 @@
 void admin_account_delete_all(void)
 {
     int flag=0;
-    char temp;
+    char *s = (char *)malloc(1*sizeof(int));
     printf("\n\t   Delete all account\n\n");
     printf("Warning all Account will be deleted Permanently\n\nPress enter to delete\nPress esc to move to safe zone\n\nPlease enter your choice:\t\t");
-    scanf("%c",temp);
-    fflush(stdin);
-    if((flag=temp)!=27)
+    if((flag=s)!=27)
     {
         printf("\n\nAll content of the file are Deleted\t"); 
-        fclose(fopen("../../7_Other/data-set/Account_Datail.dat", "w"));
-        fclose(fopen("../../7_Other/data-set/Account_Datail_temp.dat", "w"));
+        fclose(fopen("../7_Other/data-set/Account_Datail.dat", "w"));
+        fclose(fopen("../7_Other/data-set/Account_Datail_temp.dat", "w"));
+         free(s);
     }
     else
     {
         printf("\n\nNo content of the file are Deleted\t");
+         free(s);
     }
 }

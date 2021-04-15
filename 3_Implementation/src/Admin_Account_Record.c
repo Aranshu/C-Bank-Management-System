@@ -19,7 +19,7 @@ void admin_account_Record()
 {
     account_t user_data;
     int value_temp=-1,flag=0;
-    FILE* file_pointer= fopen("../../7_Other/data-set/Account_Datail.dat", "r");
+    FILE* file_pointer= fopen("../7_Other/data-set/Account_Datail.dat", "r");
     printf("\n Check the detail of existing account\n\n");
     printf("Enter account number:\t");
     scanf("%d",&value_temp);

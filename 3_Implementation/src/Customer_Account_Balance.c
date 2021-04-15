@@ -18,7 +18,7 @@
 void customer_account_balance(int account_number_temp)
 {
     account_t user_data;
-    FILE* file_pointer= fopen("../../7_Other/data-set/Account_Datail.dat", "r");
+    FILE* file_pointer= fopen("../7_Other/data-set/Account_Datail.dat", "r");
     printf("\n Balance enquiry\n\n");
     while (fscanf(file_pointer,"%50s %d %d",user_data.holder_name,&user_data.holder_account_number,&user_data.holder_amount)!=EOF)
     { 

@@ -17,14 +17,13 @@
 void login_datail_update()
 {
     int flag=0;
-    char temp;
+    char *s = (char *)malloc(1*sizeof(int));
     printf("\n\t\t\tLogin account reset\n\n");
     printf("Warning login credential will change Permanently\n\nPress enter to change login details Press esc to move to safe zone\n\nPlease enter your choice:\t\t");
-    scanf("%ch",temp);
-    fflush(stdin);
-    if((flag=temp)!=27)
+    scanf("%c",&s);
+    if((flag=s)!=27)
     {
-        FILE* file_pointer = fopen("../../7_Other/data-set/Login_Detail.dat", "w");
+        FILE* file_pointer = fopen("../7_Other/data-set/Login_Detail.dat", "w");
         char username[15],password[12];
     
         printf("\n\nPlease Enter your new username:\t\t");
@@ -36,9 +35,11 @@ void login_datail_update()
   
         printf("\nLogin details updated\t");
         fclose(file_pointer);
+         free(s);
     }
     else
     {
         printf("\n\nLogin details not updated\t");
+        free(s);
     }
 }

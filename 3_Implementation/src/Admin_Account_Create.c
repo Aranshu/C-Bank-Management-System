@@ -17,7 +17,7 @@
  */
 void admin_account_create(void)
 {
-    FILE* file_pointer = fopen("../../7_Other/data-set/Account_Datail.dat", "a+");
+    FILE* file_pointer = fopen("../7_Other/data-set/Account_Datail.dat", "a+");
   
     account_t user_data;
 
