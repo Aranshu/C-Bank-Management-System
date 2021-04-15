@@ -37,7 +37,7 @@ Bank Management System offers a range of benefits to providers medium and small.
 | 2001-2021 | The emergence of Bank Management System  | $5-$10|
 
 ## Defining Our System
-![Description](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Flow%20Char.png)
+![Description](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Flow%20Chart.png?raw=true)
 ### Explanation:
 * Bank Management System  have few inbuilt features like:
     * Create new account
