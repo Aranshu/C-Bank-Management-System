@@ -25,10 +25,12 @@ bool login_admin(char username[15],char password[12])
     while (fscanf(file_pointer,"%13s %10s",username_temp,password_temp)) 
         if(strcmp(username,username_temp)==0 && strcmp(password,password_temp)==0)
         {
+            fclose(file_pointer);
             return true;
         }
         else
         {
+            fclose(file_pointer);
             return false;
         }
 }

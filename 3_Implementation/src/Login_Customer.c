@@ -20,10 +20,15 @@
 bool login_customer(int account_number_temp)
 {
     account_t user_data;
-    FILE* file_pointer = fopen("../7_Other/data-set/Account_Detail.dat", "r");
+    FILE* file_pointer= fopen("../7_Other/data-set/Account_Datail.dat", "r");
     while (fscanf(file_pointer,"%50s %d %d",user_data.holder_name,&user_data.holder_account_number,&user_data.holder_amount)!=EOF)
+    {
         if(account_number_temp == user_data.holder_account_number)
+         {
+             fclose(file_pointer);   
             return true;
-        else
-            return false;
+         }
+    }
+    fclose(file_pointer);
+    return false;  
 }

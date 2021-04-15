@@ -210,6 +210,8 @@ main_menu:
                                                                         break;
                                                                 default:system("cls||clear"); 
                                                                         printf("Please enter a valid choice\n"); 
+                                                                        getch();
+                                                                        
                                                                         
                                                         }
                                                 }
@@ -224,6 +226,7 @@ main_menu:
                                         case'0':exit(0);
                                         default:system("cls||clear");
                                                 printf("\nPlease enter a valid choice\n"); 
+                                                getch();
                                                
                                 }
                         } 
