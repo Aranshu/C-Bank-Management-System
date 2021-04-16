@@ -74,17 +74,17 @@ Bank Management System offers a range of benefits to providers medium and small.
 ## High Level Requirements: 
 | ID | Description | Category | Status | 
 | ----- | ----- | ------- | ---------|
-| HLR1 | Bank Management System | Techincal | Development  | 
+| HLR1 | Bank Management System | Techincal | Developed  | 
 
 ##  Low level Requirements:
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LLR1 | Login System Admin | HLR1 | TBD-S1 |
-| LLR1 | Login System Customer| HLR1 | TBD-S1 |
-| LLR2 | Account Management System | HLR2 | TBD-S1 |
-| LLR2 | Withdrawl mechanism | HLR2 | TBD-S1 |
-| LLR2 | Calculator | HLR3 | TBD-S1 |
+| LLR1 | Login System Admin | HLR1 |  Developed  |
+| LLR1 | Login System Customer| HLR1 |  Developed  |
+| LLR2 | Account Management System | HLR1 |  Developed |
+| LLR2 | Withdrawl mechanism | HLR1 |  Developed  |
+| LLR2 | Calculator | HLR1 |  Developed  |
 
 
 

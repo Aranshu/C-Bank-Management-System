@@ -16,15 +16,15 @@ Username             | Password
 root                 | root
 
 ## Folder Structure
-Folder               | Description
----------------------|------------------------------------------
-`1_Requirements`     | Documents detailing requirements and research
-`2_Design`           | Documents specifying design details
-`3_Implementation`   | All code and documentation
-`4_TestplanAndOutput`| Documents with test plans and procedures
-`5_Report`           | Documents related to project report
-`6_ImagesAndVideos`  | All Images
-`7_Other`            | Contain File
+|Folder               | Description
+|---------------------|------------------------------------------
+|`1_Requirements`     | Documents detailing requirements and research
+|`2_Design`           | Documents specifying design details
+|`3_Implementation`   | All code and documentation
+|`4_TestplanAndOutput`| Documents with test plans and procedures
+|`5_Report`           | Documents related to project report
+|`6_ImagesAndVideos`  | All Images
+|`7_Other`            | Contain File
 
 ## Contributors List and Summary
 
@@ -33,11 +33,11 @@ SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test C
 `258331` | Aranshu Bansal  | Account Management & Calculator    | No     | No   | 7   | 7 |     
    
 
-## Challenges Faced and How Was It Overcome
+## Challenges Faced and How Was It Overcame
 
-1. Authentication of Admin and Customer was overcomed by using File handling.
-2. conio.h not supported for using getch() was overcomed by making a customized getch().
-3. Updating and Deleting a file was overcome by using a temporary file to store data for some time.
+1. Authentication of Admin and Customer was overcamed by using File handling.
+2. conio.h not supported for using getch() was overcamed by making a customized getch().
+3. Updating and Deleting a file was overcamed by using a temporary file to store data for some time.
 
 ## Learning Resources
 1. [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/)
