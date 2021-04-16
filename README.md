@@ -35,9 +35,9 @@ SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test C
 
 ## Challenges Faced and How Was It Overcame
 
-1. Authentication of Admin and Customer was overcamed by using File handling.
-2. conio.h not supported for using getch() was overcamed by making a customized getch().
-3. Updating and Deleting a file was overcamed by using a temporary file to store data for some time.
+1. Authentication of Admin and Customer was overcame by using File handling.
+2. conio.h not supported for using getch() was overcame by making a customized getch().
+3. Updating and Deleting a file was overcame by using a temporary file to store data for some time.
 
 ## Learning Resources
 1. [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/)
