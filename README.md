@@ -30,7 +30,7 @@ Folder               | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`258331` | Aranshu Bansal  | Account Manahement & Calculator    | No     | No   | 7   | 7 |     
+`258331` | Aranshu Bansal  | Account Management & Calculator    | No     | No   | 7   | 7 |     
    
 
 ## Challenges Faced and How Was It Overcome
