@@ -28,17 +28,16 @@ Folder               | Description
 
 ## Contributors List and Summary
 
-SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|Total Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
 `258331` | Aranshu Bansal  | Account Manahement & Calculator    | No     | No   | 7   | 7 |     
    
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Authentication of Admin and Customer was overcomed by using File handling.
+2. conio.h not supported for using getch() was overcomed by making a customized getch().
+3. Updating and Deleting a file was overcome by using a temporary file to store data for some time.
 
 ## Learning Resources
 1. [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/)
