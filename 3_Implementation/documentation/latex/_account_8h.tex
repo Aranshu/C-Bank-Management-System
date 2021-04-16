@@ -1,0 +1,193 @@
+\hypertarget{_account_8h}{}\doxysection{3\+\_\+\+Implementation/inc/\+Account.h File Reference}
+\label{_account_8h}\index{3\_Implementation/inc/Account.h@{3\_Implementation/inc/Account.h}}
+
+
+Header file for account.  
+
+
+{\ttfamily \#include \char`\"{}Header\+File.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structaccount__t}{account\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em User created header file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structaccount__t}{account\+\_\+t}} \mbox{\hyperlink{_account_8h_aa6e3011fa2d6ec0cdaaa97d0ce6b64a7}{account\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em User created header file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_account_8h_aa9ba9e786375efb47300a0a63f99459d}{admin\+\_\+account\+\_\+create}} (void)
+\begin{DoxyCompactList}\small\item\em function for creating account \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_a0766c53da0a0a39644ef84063a96a1b6}{admin\+\_\+account\+\_\+delete\+\_\+all}} (void)
+\begin{DoxyCompactList}\small\item\em function for deleting all account \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_account_8h_a72a13dabaaa86e2b87ad0a22787d2a35}\label{_account_8h_a72a13dabaaa86e2b87ad0a22787d2a35}} 
+void \mbox{\hyperlink{_account_8h_a72a13dabaaa86e2b87ad0a22787d2a35}{admin\+\_\+account\+\_\+delete}} (void)
+\begin{DoxyCompactList}\small\item\em function for deleting single account \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_aa52be86a563c3f06056142f6eab88385}{admin\+\_\+account\+\_\+list}} (void)
+\begin{DoxyCompactList}\small\item\em function for printing account list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_a8eca4a1dd7ed76f395b3500b6d196a23}{admin\+\_\+account\+\_\+\+Record}} (void)
+\begin{DoxyCompactList}\small\item\em function for printing a particular record \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_account_8h_a38c27af53617d61be8e15d76c357f845}\label{_account_8h_a38c27af53617d61be8e15d76c357f845}} 
+void \mbox{\hyperlink{_account_8h_a38c27af53617d61be8e15d76c357f845}{admin\+\_\+account\+\_\+update}} (void)
+\begin{DoxyCompactList}\small\item\em function for updating account datail \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_ae66933479bd4ea82f1c1dad82efea6af}{customer\+\_\+account\+\_\+balance}} (int account\+\_\+number\+\_\+temp)
+\begin{DoxyCompactList}\small\item\em Function to check balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_adef8116b7b1508a1f3cd0d055b18d73c}{customer\+\_\+account\+\_\+detail}} (int account\+\_\+number\+\_\+temp)
+\begin{DoxyCompactList}\small\item\em function for checking detail \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_account_8h_a904100ff695feba0e318c88f0b6882ff}{customer\+\_\+account\+\_\+withdrawl}} (int account\+\_\+number\+\_\+temp)
+\begin{DoxyCompactList}\small\item\em function to make withdrawl \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_account_8h_a7ed209f0c72d0f4bebdd65d43df64c51}{login\+\_\+customer}} (int account\+\_\+number\+\_\+temp)
+\begin{DoxyCompactList}\small\item\em Function used Login customer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for account. 
+
+\begin{DoxyAuthor}{Author}
+your name (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/09
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_account_8h_aa6e3011fa2d6ec0cdaaa97d0ce6b64a7}\label{_account_8h_aa6e3011fa2d6ec0cdaaa97d0ce6b64a7}} 
+\index{Account.h@{Account.h}!account\_t@{account\_t}}
+\index{account\_t@{account\_t}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{account\_t}{account\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structaccount__t}{account\+\_\+t}} \mbox{\hyperlink{structaccount__t}{account\+\_\+t}}}
+
+
+
+User created header file. 
+
+Error values for calculator operations 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_account_8h_aa9ba9e786375efb47300a0a63f99459d}\label{_account_8h_aa9ba9e786375efb47300a0a63f99459d}} 
+\index{Account.h@{Account.h}!admin\_account\_create@{admin\_account\_create}}
+\index{admin\_account\_create@{admin\_account\_create}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{admin\_account\_create()}{admin\_account\_create()}}
+{\footnotesize\ttfamily void admin\+\_\+account\+\_\+create (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function for creating account 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_account_8h_a0766c53da0a0a39644ef84063a96a1b6}\label{_account_8h_a0766c53da0a0a39644ef84063a96a1b6}} 
+\index{Account.h@{Account.h}!admin\_account\_delete\_all@{admin\_account\_delete\_all}}
+\index{admin\_account\_delete\_all@{admin\_account\_delete\_all}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{admin\_account\_delete\_all()}{admin\_account\_delete\_all()}}
+{\footnotesize\ttfamily void admin\+\_\+account\+\_\+delete\+\_\+all (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function for deleting all account 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_account_8h_aa52be86a563c3f06056142f6eab88385}\label{_account_8h_aa52be86a563c3f06056142f6eab88385}} 
+\index{Account.h@{Account.h}!admin\_account\_list@{admin\_account\_list}}
+\index{admin\_account\_list@{admin\_account\_list}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{admin\_account\_list()}{admin\_account\_list()}}
+{\footnotesize\ttfamily void admin\+\_\+account\+\_\+list (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function for printing account list 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_account_8h_a8eca4a1dd7ed76f395b3500b6d196a23}\label{_account_8h_a8eca4a1dd7ed76f395b3500b6d196a23}} 
+\index{Account.h@{Account.h}!admin\_account\_Record@{admin\_account\_Record}}
+\index{admin\_account\_Record@{admin\_account\_Record}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{admin\_account\_Record()}{admin\_account\_Record()}}
+{\footnotesize\ttfamily void admin\+\_\+account\+\_\+\+Record (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function for printing a particular record 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_account_8h_ae66933479bd4ea82f1c1dad82efea6af}\label{_account_8h_ae66933479bd4ea82f1c1dad82efea6af}} 
+\index{Account.h@{Account.h}!customer\_account\_balance@{customer\_account\_balance}}
+\index{customer\_account\_balance@{customer\_account\_balance}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{customer\_account\_balance()}{customer\_account\_balance()}}
+{\footnotesize\ttfamily void customer\+\_\+account\+\_\+balance (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Function to check balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number\+\_\+temp} & account number of customer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_account_8h_adef8116b7b1508a1f3cd0d055b18d73c}\label{_account_8h_adef8116b7b1508a1f3cd0d055b18d73c}} 
+\index{Account.h@{Account.h}!customer\_account\_detail@{customer\_account\_detail}}
+\index{customer\_account\_detail@{customer\_account\_detail}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{customer\_account\_detail()}{customer\_account\_detail()}}
+{\footnotesize\ttfamily void customer\+\_\+account\+\_\+detail (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+function for checking detail 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number\+\_\+temp} & account number of customer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_account_8h_a904100ff695feba0e318c88f0b6882ff}\label{_account_8h_a904100ff695feba0e318c88f0b6882ff}} 
+\index{Account.h@{Account.h}!customer\_account\_withdrawl@{customer\_account\_withdrawl}}
+\index{customer\_account\_withdrawl@{customer\_account\_withdrawl}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{customer\_account\_withdrawl()}{customer\_account\_withdrawl()}}
+{\footnotesize\ttfamily void customer\+\_\+account\+\_\+withdrawl (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+function to make withdrawl 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number\+\_\+temp} & account number of customer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_account_8h_a7ed209f0c72d0f4bebdd65d43df64c51}\label{_account_8h_a7ed209f0c72d0f4bebdd65d43df64c51}} 
+\index{Account.h@{Account.h}!login\_customer@{login\_customer}}
+\index{login\_customer@{login\_customer}!Account.h@{Account.h}}
+\doxysubsubsection{\texorpdfstring{login\_customer()}{login\_customer()}}
+{\footnotesize\ttfamily bool login\+\_\+customer (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Function used Login customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number\+\_\+temp} & account number of customer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
