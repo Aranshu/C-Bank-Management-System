@@ -1,7 +1,7 @@
 # SDLC Activity Based Learning
 * BANK MANAGEMENT SYSTEM, The main aim of this project is to develop software for bank management system. This project is to develop software for bank management system. This project has been developed to carry out the processes easily and quickly, which is not possible with the manuals systems, which are overcome by this software. This project is developed using c language and. Hence it provides the complete solution for the current management system.
 
-![Banner](https://github.com/Aranshu/Project/blob/master/6_ImagesAndVideos/Banner.png)
+![Banner](https://github.com/Aranshu/C-Bank-Management-System/blob/master/6_ImagesAndVideos/Banner.png?raw=true)
 
 |Build|Unit Test|cppcheck|Valgrind|Coverage|
 |:--:|:--:|:--:|:--:|:--:|
